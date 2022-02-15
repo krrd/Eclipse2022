@@ -7,7 +7,7 @@ public class DuplicateCharacters
 		String originalStr = "Great responsibility";
 		
 		//to check for duplicate characters in a String first convert the string to char array and then compare
-		System.out.println("Duplicate Characters in the string:");
+		
 		char dupString[] = originalStr.toCharArray();
 		int count = 0;
 		
@@ -25,6 +25,7 @@ public class DuplicateCharacters
 			}
 			if(count>1 && dupString[i]!='0')
 			{
+				//System.out.print(count);
 				System.out.println(dupString[i]);
 			}
 		}
