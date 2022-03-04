@@ -1,0 +1,19 @@
+package com.pracPrograms;
+
+public class ElementCountDisplay
+{
+	public static void countDisplay(String str1)
+	{
+		
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		String str = "aaaabbbccdaaeedrry";
+		
+		countDisplay(str);
+
+	}
+
+}

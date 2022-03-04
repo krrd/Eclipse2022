@@ -1,0 +1,48 @@
+package com.pracPrograms;
+
+import java.util.HashMap;
+import java.util.Set;
+import java.util.Map.Entry;
+
+public class NonDuplicateCheck 
+{
+	public static void nonDuplicateCheck(String str)
+	{
+		//Converting string to character array
+		char[] str1 = str.toCharArray();
+				
+		HashMap<Character,Integer> resultMap = new HashMap<Character,Integer>();
+		
+		for(int i =0;i<str1.length;i++)
+		{
+			if(resultMap.containsKey(str1[i]))
+			{
+				resultMap.put(str1[i], (resultMap.get(str1[i]))+1);
+			}
+			else
+			{
+				resultMap.put(str1[i],1);
+			}
+		}
+		
+		Set<Entry<Character,Integer>> entrySet = resultMap.entrySet();
+		
+		for(Entry<Character,Integer> entry: entrySet)
+		{
+			if(entry.getValue() > 1)
+			{
+				System.out.println("Duplicate Element:"+entry.getKey());
+			}
+		}
+	}
+	
+	//Driver code	
+	public static void main(String[] args) 
+	{
+		String initialStr = "firstNonf";
+		
+		nonDuplicateCheck(initialStr);
+
+	}
+
+}

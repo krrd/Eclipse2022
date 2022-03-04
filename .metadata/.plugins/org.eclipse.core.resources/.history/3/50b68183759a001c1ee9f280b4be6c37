@@ -1,0 +1,26 @@
+package com.pracPrograms;
+
+public class ArraySecLargest 
+{
+	//Print the second largest element of array
+	public static void secLargest(int arr[],int arr_size)
+	{
+		//Minimum length of array 
+		if(arr_size < 2)
+		{
+			System.out.println("Input array is invalid");
+		}
+	}
+	
+	//Driver Code
+	public static void main(String[] args) 
+	{
+		int arr[] = {12,4,6,9,2,8};
+		
+		int n = arr.length;
+		
+		secLargest(arr,n);
+		
+	}
+
+}

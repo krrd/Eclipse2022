@@ -1,0 +1,21 @@
+package com.pracPrograms;
+
+import java.util.HashMap;
+
+public class NonDuplicateCheck 
+{
+	public static void nonDuplicateCheck(String str)
+	{
+		HashMap<String,Integer> map = new HashMap<String,Integer>();
+	}
+	
+	//Driver code	
+	public static void main(String[] args) 
+	{
+		String initialStr = "firstNon";
+		
+		nonDuplicateCheck(initialStr);
+
+	}
+
+}

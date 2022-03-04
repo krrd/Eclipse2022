@@ -1,0 +1,44 @@
+package com.pracPrograms;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class ElementCountDisplay
+{
+	public static void countDisplay(String str1)
+	{
+		StringBuilder sb = new StringBuilder();
+		
+		int count = 1;
+		char checkChar = str1.charAt(0);
+		
+		for(int i=1;i<str1.length();i++)
+		{
+			if(str1.charAt(i)== checkChar)
+			{
+				count++;
+			}
+			else
+			{
+				sb.append(checkChar).append(count);
+				count = 1;
+				checkChar = str1.charAt(i);
+			}
+		}
+		//Display
+		sb.append(checkChar).append(count);
+		System.out.println(sb.toString());
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		String str = "aab";
+		
+		countDisplay(str);
+
+	}
+
+}

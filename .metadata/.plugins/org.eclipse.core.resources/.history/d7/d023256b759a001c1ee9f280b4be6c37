@@ -1,0 +1,13 @@
+package com.pracPrograms;
+
+public class PrimeNumberCheck 
+{
+
+	public static void main(String[] args) 
+	{
+		Integer.MIN_VALUE ;
+		System.out.println();
+
+	}
+
+}

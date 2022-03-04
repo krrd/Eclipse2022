@@ -1,0 +1,24 @@
+package com.pracPrograms;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ElementCountDisplay
+{
+	public static void countDisplay(String str1)
+	{
+		char[] arr = str1.toCharArray();
+		
+		Map<Character,Integer> resultMap = new HashMap<>();
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		String str = "aaaabbbccdaaeedrry";
+		
+		countDisplay(str);
+
+	}
+
+}
