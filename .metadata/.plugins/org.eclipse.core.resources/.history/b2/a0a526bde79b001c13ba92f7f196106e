@@ -28,7 +28,7 @@ public class PrimeNumberCheck
 			System.out.println(num +" is not a Prime number");
 	}
 	
-	//Driver code
+	
 	public static void main(String[] args) 
 	{
 		Scanner myObj = new Scanner(System.in);
